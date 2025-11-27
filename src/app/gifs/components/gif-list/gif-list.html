@@ -1,1 +1,5 @@
-@for (imageUrl of imagesUrl(); track $index) { <gif-list-item [url]="imageUrl"></gif-list-item> }
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  @for (imageUrl of imagesUrl(); track $index) {
+  <gif-list-item [url]="imageUrl.url"></gif-list-item>
+  }
+</div>
